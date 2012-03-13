@@ -112,9 +112,21 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>entity.record.key.whiley</string>
+      <key>match</key>
+      <string>\w+:</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>constant.this.whiley</string>
+      <key>match</key>
+      <string>\b(this)\b</string>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>keyword.whiley</string>
       <key>match</key>
-      <string>\b(import|from|define|as|ref|return)\b</string>
+      <string>\b(import|from|define|as|ref|spawn|return)\b</string>
     </dict>
     <dict>
       <key>name</key>
@@ -126,7 +138,7 @@
       <key>name</key>
       <string>keyword.operator.whiley</string>
       <key>match</key>
-      <string>[.|!%$?&amp;\*~+:\-=&lt;/&gt;\\]+</string>
+      <string>[.|!%$?&amp;\*~+\-=&lt;/&gt;\\]+</string>
     </dict>
     <dict>
       <key>name</key>
