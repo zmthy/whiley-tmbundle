@@ -73,7 +73,7 @@
       <key>name</key>
       <string>meta.method.whiley</string>
       <key>begin</key>
-      <string>\b(\w+)\s+(?:(\w+)?(?:::\s*))?(\w+)\(</string>
+      <string>\b(\w+)\s+(?:([\w.]+)?(?:::\s*))?(\w+)\(</string>
       <key>beginCaptures</key>
       <dict>
         <key>1</key>
