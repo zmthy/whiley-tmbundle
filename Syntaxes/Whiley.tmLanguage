@@ -47,6 +47,29 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>meta.package.whiley</string>
+      <key>begin</key>
+      <string>\b(package)\b</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.package.whiley</string>
+        </dict>
+      </dict>
+      <key>end</key>
+      <string>($|;)</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>#module_name</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>meta.define.whiley</string>
       <key>match</key>
       <string>\b(define)\s+(\w+)\s+(as)</string>
@@ -93,7 +116,7 @@
         </dict>
       </dict>
       <key>end</key>
-      <string>:</string>
+      <string>\):</string>
       <key>patterns</key>
       <array>
         <dict>
@@ -126,13 +149,13 @@
       <key>name</key>
       <string>keyword.whiley</string>
       <key>match</key>
-      <string>\b(import|from|define|as|ref|spawn|return)\b</string>
+      <string>\b(package|import|from|define|as|ref|new|return|debug|public|native)\b</string>
     </dict>
     <dict>
       <key>name</key>
       <string>storage.type.whiley</string>
       <key>match</key>
-      <string>\b(void|int|real|string)\b</string>
+      <string>\b(void|any|int|real|string)\b</string>
     </dict>
     <dict>
       <key>name</key>
