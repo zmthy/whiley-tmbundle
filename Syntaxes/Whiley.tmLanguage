@@ -94,9 +94,15 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>keyword.whiley</string>
+      <key>match</key>
+      <string>\b(package|import|from|define|as|ref|new|return|throw|throws|while|if|for|try|catch|debug|public|private|native)\b</string>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>meta.method.whiley</string>
       <key>begin</key>
-      <string>\b(\w+)\s+(?:([\w.]+)?(?:::\s*))?(\w+)\(</string>
+      <string>([\w.\(\)\[\]\{\},]+)\s+(?:([\w.]+)?(?:::\s*))?(\w+)\(</string>
       <key>beginCaptures</key>
       <dict>
         <key>1</key>
@@ -116,7 +122,7 @@
         </dict>
       </dict>
       <key>end</key>
-      <string>\)(?:\s*(throws)\s+([\w.]+))?\s*:</string>
+      <string>\)(?:\s*(throws)\s+([\w\.]+))?\s*:</string>
       <key>endCaptures</key>
       <dict>
         <key>1</key>
@@ -145,18 +151,6 @@
           </dict>
         </dict>
       </array>
-    </dict>
-    <dict>
-      <key>name</key>
-      <string>keyword.whiley</string>
-      <key>match</key>
-      <string>\b(package|import|from|define|as|ref|new|return|throw|throws|try|catch|debug|public|private|native)\b</string>
-    </dict>
-    <dict>
-      <key>name</key>
-      <string>entity.record.key.whiley</string>
-      <key>match</key>
-      <string>\w+:</string>
     </dict>
     <dict>
       <key>name</key>
