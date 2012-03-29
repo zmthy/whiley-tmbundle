@@ -135,6 +135,12 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>keyword.whiley</string>
+      <key>match</key>
+      <string>\b(package|import|from|define|as|ref|new|return|try|catch|debug|public|private|native)\b</string>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>entity.record.key.whiley</string>
       <key>match</key>
       <string>\w+:</string>
@@ -144,12 +150,6 @@
       <string>constant.this.whiley</string>
       <key>match</key>
       <string>\b(this)\b</string>
-    </dict>
-    <dict>
-      <key>name</key>
-      <string>keyword.whiley</string>
-      <key>match</key>
-      <string>\b(package|import|from|define|as|ref|new|return|debug|public|native)\b</string>
     </dict>
     <dict>
       <key>name</key>
