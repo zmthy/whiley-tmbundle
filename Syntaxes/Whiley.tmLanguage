@@ -97,7 +97,7 @@
       <key>name</key>
       <string>keyword.whiley</string>
       <key>match</key>
-      <string>\b(package|import|from|define|as|where|ref|new|return|throw|throws|requires|ensures|while|if|for|in|try|catch|debug|public|private|native)\b</string>
+      <string>\b(package|import|from|define|as|where|ref|new|return|throw|throws|requires|ensures|while|if|else|for|in|try|catch|debug|public|private|native)\b</string>
     </dict>
     <dict>
       <key>name</key>
@@ -166,9 +166,15 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>constant.null.whiley</string>
+      <key>match</key>
+      <string>\b(null)\b</string>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>storage.type.whiley</string>
       <key>match</key>
-      <string>\b(void|any|int|real|string)\b</string>
+      <string>\b(void|any|null|int|real|nat|string)\b</string>
     </dict>
     <dict>
       <key>name</key>
