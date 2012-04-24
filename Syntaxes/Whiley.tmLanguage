@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -96,7 +97,7 @@
       <key>name</key>
       <string>keyword.whiley</string>
       <key>match</key>
-      <string>\b(package|import|from|define|as|ref|new|return|throw|throws|while|if|for|in|try|catch|debug|public|private|native)\b</string>
+      <string>\b(package|import|from|define|as|ref|new|return|throw|throws|requires|ensures|while|if|for|in|try|catch|debug|public|private|native)\b</string>
     </dict>
     <dict>
       <key>name</key>
@@ -122,7 +123,7 @@
         </dict>
       </dict>
       <key>end</key>
-      <string>\)(?:\s*(throws)\s+([\w\.]+))?\s*:</string>
+      <string>\)(?:(?:\s*(throws)\s([\w\.]+))|(?:\s*(requires|ensures)\s(.+)))?\s*:</string>
       <key>endCaptures</key>
       <dict>
         <key>1</key>
@@ -134,6 +135,11 @@
         <dict>
           <key>name</key>
           <string>storage.type.throws.whiley</string>
+        </dict>
+        <key>3</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.condition.whiley</string>
         </dict>
       </dict>
       <key>patterns</key>
@@ -240,7 +246,7 @@
       <key>name</key>
       <string>constant.numeric.whiley</string>
       <key>match</key>
-      <string>\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b</string>
+      <string>\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))b?\b</string>
     </dict>
     <dict>
       <key>name</key>
