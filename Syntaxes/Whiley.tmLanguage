@@ -97,7 +97,7 @@
       <key>name</key>
       <string>keyword.whiley</string>
       <key>match</key>
-      <string>\b(package|import|from|define|as|ref|new|return|throw|throws|requires|ensures|while|if|for|in|try|catch|debug|public|private|native)\b</string>
+      <string>\b(package|import|from|define|as|where|ref|new|return|throw|throws|requires|ensures|while|if|for|in|try|catch|debug|public|private|native)\b</string>
     </dict>
     <dict>
       <key>name</key>
@@ -174,7 +174,13 @@
       <key>name</key>
       <string>keyword.operator.whiley</string>
       <key>match</key>
-      <string>[.|!%$?&amp;\*~+\-=&lt;/&gt;\\]+</string>
+      <string>[.|!%?&amp;\*~+\-=&lt;/&gt;\\]+</string>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>entity.self.whiley</string>
+      <key>match</key>
+      <string>\$</string>
     </dict>
     <dict>
       <key>name</key>
